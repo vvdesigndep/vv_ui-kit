@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <title>UI KIT</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="nav-fix-column">
+            <div class="vv-logo">
+            </div>
+            <nav class="ui-kit__nav">
+                <ul class="ui-kit__nav-list">
+                    <li>
+                        <a class="nav-btn" href="typography.html">Typography</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn active" href="">Buttons</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="checkbox.html">Checkbox</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="colours.html">Colours</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="forms.html">Forms</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="reviews.html">Reviews</a>
+                    </li>
+                    <li>
+                        <a class="nav-btn" href="logo.html">Logotype</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+            <!-- Begining block-content -->
+
+
+        <section class="ui-kit__section"><p class="page-header">Buttons</p>
+        <div class="btn-block">
+            <p class="blocks-title">Default buttons L-size</p>
+            <p>Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на&nbsp;неё.</p>
+            <p>Синие кнопки — основные акцентные кнопки. </p>
+            <a class="btn-l_blue_gradient" href="#">Blue Gradient Button</a>
+            <a class="btn-l_blue_flat" href="#">Blue Solid Button</a>
+            <a class="btn-l_blue_disable" href="#">Blue Disable Button</a>
+            <br>
+            <br>
+            <div class="code-block">
+<pre class="" style="font-family:monospace;">
+.btn-l_blue {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 20px 10px 0;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: .6px;
+    padding: .4em 1.6em;
+    background-color: #5070B2;
+    background: -webkit-linear-gradient(top, #7290CB, #5070B2);
+    background: linear-gradient(to bottom, #7290CB, #5070B2);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+</pre>
+            </div>
+            <p>Зеленые кнопки используются как подтверждение действий. Например: сохраниение формы.</p>
+            <a class="btn-l_green_gradient" href="#">Green Gradient Button</a>
+            <a class="btn-l_green_flat" href="#">Green Solid Button</a>
+            <a class="btn-l_green_disable" href="#">Blue Disable Button</a>
+            <br>
+            <br>
+            <div class="code-block">
+<pre class="" style="font-family:monospace;">
+.btn-l_green {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 20px 10px 0;
+    padding: .4em 1.6em;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    font-weight: 300;
+    letter-spacing: .6px;
+    color: #fff;
+    background-color: #ffce44;
+    background: -webkit-linear-gradient(top, #45C467, #10A04B);
+    background: linear-gradient(to bottom, #45C467, #10A04B);
+    border-radius: 4px;
+    cursor: pointer;
+}
+</pre>
+                </div>
+            </div>
+            <p class="blocks-title">CTA buttons XL-size</p>
+            <div class="btn-block__btn-xl">
+                <a class="btn-xl_yellow" href="#">Yellow CTA button XL</a>
+                <a class="btn-xl_green" href="#">Green CTA button XL</a>
+                <br>
+                <br>
+            </div>
+            <div class="code-block">
+<pre class="" style="font-family:monospace;">
+.btn-xxl_yellow {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 20px 20px 0;
+    padding: 1.15em 2.6em;
+    transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
+    transition-delay: .1s;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    background-color: #ffce44;
+    background: -webkit-linear-gradient(top, #FFCE44, #FFC12F);
+    background: linear-gradient(to bottom, #FFCE44, #FFC12F);
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px  rgba(100,80,10, .5);
+    cursor: pointer;
+}
+</pre>
+            </div>
+            <p class="blocks-title">Nav buttons</p>
+            <br>
+            <div>
+                <a class="btn-nav_light_back" href="#" rel="noopener">Back</a>
+                <a class="btn-nav_light_forward" href="#" rel="noopener">Forward</a>
+            </div>
+        </section>
+
+        <!-- Навигация по раздерам -->
+
+        <section class="page-nav">
+            <div class="page-nav_back">
+                <a href="typography.html" rel="">← Предыдущий раздел</a>
+            </div>
+            <div class="page-nav_forward">
+                <a href="checkbox.html" rel="">Следующий раздел →</a>
+            </div>
+        </section>
+    </body>
+</html>
