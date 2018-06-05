@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+  <defs>
+    <rect id="right-a" width="28" height="28" rx="3"/>
+    <polygon id="right-c" points="1.455 14 8 7 1.455 0 0 1.556 5.091 7 0 12.444"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="right-b" fill="#fff">
+      <use xlink:href="#right-a"/>
+    </mask>
+    <g fill="#FFF" mask="url(#right-b)">
+      <rect width="28" height="28" rx="3"/>
+    </g>
+    <g transform="translate(10 7)">
+      <mask id="right-d" fill="#fff">
+        <use xlink:href="#right-c"/>
+      </mask>
+      <use fill="#000" xlink:href="#right-c"/>
+      <g fill="#8D92A4" mask="url(#right-d)">
+        <rect width="28" height="28" rx="3" transform="translate(-10 -7)"/>
+      </g>
+    </g>
+  </g>
+</svg>
