@@ -40,7 +40,7 @@ h2 {
     margin: 40px 0 20px 0;
     font-size: 24px;
     line-height: 33px;
-    font-weight: 400;
+    font-weight: bold;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     color: #252525;
     letter-spacing: normal;
@@ -200,12 +200,12 @@ form {
 
 .code-block {
     display: block;
-    height: 183px;
-    margin-bottom: 40px;
+    /* height: 183px; */
+    margin-bottom: 60px;
     padding: 20px;
     background-color: #F9F9F9;
     box-shadow: inset 0 4px 0px #D7D9DD;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .code-block pre {
@@ -299,6 +299,14 @@ label {
     font-weight: normal;
 }
 
+.label {
+    margin-bottom: 10px;
+    font-family: Helvetica, Arial;
+    font-size: 14px;
+    color: #5070b2;
+    font-weight: normal;
+}
+
 .page-header {
     display: block;
     margin-top: 60px;
@@ -307,8 +315,8 @@ label {
     font-family: 'Roboto', 'Helvetica', Arial;
     font-size: 32px;
     letter-spacing: 1px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 700;
+    /* text-transform: uppercase; */
     color: #5070B2;
     border-bottom: 2px solid #5070B2;
 }
@@ -499,40 +507,86 @@ input[type="password"]:focus {
   width: 100%;
 }
 
-.btn-xl_yellow {
+/* Размеры кнопок */
+
+.btn-xl {
     display: inline-block;
     vertical-align: top;
     margin: 20px 20px 20px 0;
-    padding: 1.15em 2.6em;
+    padding: 1.1em 2.6em 1em;
     transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
     transition-delay: .1s;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    font-size: 18px;
     font-weight: 400;
+    letter-spacing: .6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-m {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 20px 20px 0;
+    padding: .7em 1.6em .7em;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: .6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-l {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 20px 20px 0;
+    padding: .35em 1.6em .5em;
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: .6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_blue_gradient {
+    background-color: #5070B2;
+    background: -webkit-linear-gradient(top, #FFCE44, #FFC12F);
+    background: linear-gradient(to bottom, #FFCE44, #FFC12F);
+}
+
+/* СТА кнопки */
+
+.btn_yellow_cta {
     color: #000;
     background-color: #ffce44;
     background: -webkit-linear-gradient(top, #FFCE44, #FFC12F);
     background: linear-gradient(to bottom, #FFCE44, #FFC12F);
-    border-radius: 4px;
     box-shadow: 0px 3px 10px  rgba(100,80,10, .5);
-    cursor: pointer;
 }
 
-.btn-xl_yellow:hover {
+.btn_yellow_cta:hover {
     /* transition: all 0.2s;
     top: -2px; */
     transform: scale(1.03);
     transform: translate(0, 0);
-    text-decoration: none;
     background-color: #fed528;
     background: -webkit-linear-gradient(top, #FED528, #FFCE44);
     background: linear-gradient(to bottom, #FED528, #FFCE44);
     box-shadow: 0px 3px 10px  rgba(100,80,10, .5), 0px 6px 20px  rgba(140,110,0, .4);
 }
 
-.btn-xl_yellow:active {
+.btn_yellow_cta:active {
     text-decoration: none;
     background-color: #fed528;
     background: -webkit-linear-gradient(top, #FFC12F, #FFCE44);
@@ -547,240 +601,173 @@ input[type="password"]:focus {
 
 }
 
-.btn-xl_green {
-    display: inline-block;
-    vertical-align: top;
-    margin: 20px 20px 20px 0;
-    padding: 1.15em 2.6em;
-    transition: box-shadow .3s ease-out, transform .3s ease-out, opacity .2s ease-out;
-    transition-delay: .1s;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 300;
+.btn_green_cta {
     color: #FFF;
     background-color: #45CF73;
     background: linear-gradient(to bottom, #45C467, #10A04B);
-    border-radius: 4px;
     box-shadow: 0px 3px 10px  rgba(10,78,30, .5);
     cursor: pointer;
 }
 
-.btn-xl_green:hover {
+.btn_green_cta:hover {
     /* transition: all 0.2s;
     top: -2px; */
     transform: scale(1.03);
     transform: translate(0, 0);
-    text-decoration: none;
     background-color: #45CF73;
     background: linear-gradient(to bottom, #43D36A, #22B24B);
     box-shadow: 0px 3px 10px  rgba(10,78,30, .5), 0px 6px 20px  rgba(0,154,45, .3);
 }
 
-.btn-xl_green:active {
-    text-decoration: none;
+.btn_green_cta:active {
     background-color: #45CF73;
     background: linear-gradient(to bottom, #10A04B, #45C467);
     box-shadow: inset 0px 2px 4px  rgba(10,10,10, .2);
 }
 
   @media (min-width: 481px) {
-    .btn-xl_green {
+    .btn_green_cta {
       width: auto;
     }
 
 }
 
-.btn-l_blue_gradient {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    padding: .4em 1.6em;
+/* Гражиентные кнопки */
+
+.btn_blue_gradient {
     background-color: #5070B2;
     background: linear-gradient(to bottom, #5D82CB, #5070B2);
-    border-radius: 4px;
     color: #fff;
-    cursor: pointer;
 }
-.btn-l_blue_gradient:hover {
+.btn_blue_gradient:hover {
     text-decoration: none;
     background-color: #7290cb;
     background: linear-gradient(to bottom, #668CD9, #5779BF);
 }
 
-.btn-l_blue_gradient:active {
-    text-decoration: none;
+.btn_blue_gradient:active {
     background-color: #82A3E4;
     background: linear-gradient(to bottom, #5779BF, #668CD9);
     box-shadow: inset 0px 2px 4px rgba(10,10,10, .3);
 }
 
 @media (min-width: 116px) {
-    .btn-l_blue_gradient {
+    .btn_blue_gradient {
       width: auto;
     }
 }
 
-.btn-l_blue_flat {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    padding: .4em 1.6em;
+.btn_blue_gradient {
     background-color: #5070B2;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
+    background: linear-gradient(to bottom, #5D82CB, #5070B2);
 }
-.btn-l_blue_flat:hover {
-    text-decoration: none;
+.btn_blue_gradient:hover {
+    background-color: #7290cb;
+    background: linear-gradient(to bottom, #668CD9, #5779BF);
+}
+
+.btn_blue_gradient:active {
+    background-color: #82A3E4;
+    background: linear-gradient(to bottom, #5779BF, #668CD9);
+    box-shadow: inset 0px 2px 4px rgba(10,10,10, .3);
+}
+
+@media (min-width: 116px) {
+    .btn_blue_gradient {
+        width: auto;
+    }
+}
+
+.btn_blue_flat {
+    color: #FFF;
+    background-color: #5070B2;
+}
+
+.btn_blue_flat:hover {
     background-color: #6186D0;
 }
 
-.btn-l_blue_flat:active {
-    text-decoration: none;
+.btn_blue_flat:active {
     background-color: #6186D0;
     box-shadow: inset 0px 2px 4px rgba(10,10,10, .3);
 }
 
 @media (min-width: 116px) {
-    .btn-l_blue_flat {
-      width: auto;
+    .btn_blue_flat {
+        width: auto;
     }
 }
 
-.btn-l_blue_disable {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    padding: .4em 1.6em;
-    background-color: #DCDFE4;
-    border-radius: 4px;
+.btn_blue_disable {
     color: rgba(37, 37, 37, 0.4);
+    background-color: #DCDFE4;
     cursor: not-allowed;
 }
 
 @media (min-width: 116px) {
-    .btn-l_blue_disable {
+    .btn_blue_disable {
       width: auto;
     }
 }
 
-.btn-l_green_gradient {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    padding: .4em 1.6em;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    color: #fff;
+.btn_green_gradient {
+    color: #FFF;
     background-color: #45C467;
     background: linear-gradient(to bottom, #45C467, #10A04B);
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-.btn-l_green_gradient:hover{
-    text-decoration: none;
+.btn_green_gradient:hover{
     background-color: #45CF73;
     background: linear-gradient(to bottom, #45CF73, #2FC161);
 }
 
-.btn-l_green_gradient:active {
-    text-decoration: none;
+.btn_green_gradient:active {
     background-color: #45CF73;
     background: linear-gradient(to bottom, #10A04B, #45C467);
     box-shadow: inset 0px 2px 4px rgba(10,10,10, .3);
 }
 
 @media (min-width: 116px) {
-    .btn-l_green_gradient {
+    .btn_green_gradient {
       width: auto;
     }
 }
 
-.btn-l_green_flat {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    padding: .4em 1.6em;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    color: #fff;
+.btn_green_flat {
+    color: #FFF;
     background-color: #30C161;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
-.btn-l_green_flat:hover{
-    text-decoration: none;
+.btn_green_flat:hover{
     background-color: #45CF73;
 }
 
-.btn-l_green_flat:active {
-    text-decoration: none;
+.btn_green_flat:active {
     background-color: #45CF73;
     box-shadow: inset 0px 2px 4px rgba(10,10,10, .3);
 }
 
 @media (min-width: 116px) {
-    .btn-l_green_flat {
+    .btn_green_flat {
       width: auto;
     }
 }
 
-.btn-l_green_disable {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 20px 20px 20px 0;
-    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-    text-align: center;
-    text-transform: none;
-    text-decoration: none;
-    font-weight: 300;
-    letter-spacing: .6px;
-    padding: .4em 1.6em;
-    background-color: #C7D9C8;
-    border-radius: 4px;
+.btn_green_disable {
     color: rgba(37, 37, 37, 0.4);
+    background-color: #C7D9C8;
     cursor: not-allowed;
 }
 
 @media (min-width: 116px) {
-    .btn-l_green_disable {
+    .btn_green_disable {
       width: auto;
     }
 }
 
 .btn-nav_default- {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     margin: 10px 20px 10px 0;
     padding: .4em 1.6em;
     font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
@@ -1008,6 +995,49 @@ input[type="password"]:focus {
 }
 
 .btn-nav_light_forward:active {
+    background-color: #E4EFF9;
+    box-shadow: inset 0 1px 3px  rgba(0,0,0,0.3);
+}
+
+/* Акцентная кнопка для навигации */
+
+.btn-nav_light_forward_accent {
+    position: relative;
+    display: inline;
+    margin: 20px 22px 20px 0;
+    padding: 8px 34px;
+    background-color: #fff;
+    border: 1px solid #E5EEF7;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-nav_light_forward_accent::after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    right: 2px;
+    width: 28px;
+    height: 28px;
+    background: transparent url("../svg/shevron-right.svg") no-repeat;
+    background-position: 0 0;
+}
+
+.btn-nav_light_forward_accent:hover {
+    border-color: #4BACFF;
+}
+
+.btn-nav_light_forward_accent:focus {
+    border-color: #4BACFF;
+    outline: none;
+}
+
+.btn-nav_light_forward_accent:hover::after {
+    background: url("../svg/shevron-right-blue.svg") no-repeat;
+}
+
+.btn-nav_light_forward_accent:active {
     background-color: #E4EFF9;
     box-shadow: inset 0 1px 3px  rgba(0,0,0,0.3);
 }
