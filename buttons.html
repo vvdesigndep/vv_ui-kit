@@ -7,7 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <section class="nav-fix-column">
@@ -45,27 +45,41 @@
         <section class="ui-kit__section"><p class="page-header">Buttons</p>
         <div class="btn-block">
             <br>
-            <p>Кнопки, как основой контролл на сайте, подразделяются на 3-х типо-размера.</p>
+            <h2>Типоразмеры</h2>
+            <p>Кнопки, как основой контролл на сайте, подразделяются на 3-х типоразмера.</p>
             <p><strong>Size-XL</strong> — самый большой размер. Используется только для кнопок типа СТА.</p>
             <p><strong>Size-M</strong> — средний размер. Используются для обычных акцентных нужд.</p>
             <p><strong>Size-L</strong> — самый распространненный размер кнопок. Он используется по умолчанию.</p>
-            <a class="btn-xl btn_blue_gradient" href="#">Size-XL Button</a>
-            <a class="btn-m btn_blue_gradient" href="#">Size-M Button</a>
-            <a class="btn-l btn_blue_gradient" href="#">Size-L Button</a>
-            <p class="blocks-title">Default buttons L-size</p>
+            <a class="btn-size_xl btn-blue_gradient" href="#">Size-XL Button</a>
+            <a class="btn-size_m btn-blue_gradient" href="#">Size-M Button</a>
+            <a class="btn-size_l btn-blue_gradient" href="#">Size-L Button</a>
+            <br>
+            <h2>Цветовая политра для кнопок</h2>
+            <p>Кнопки бывают 2-х цветовых заливок:</p>
+            <ol>
+                <li>Градиентная заливка</li>
+                <li>Однотонная (flat) заливка</li>
+            </ol>
+            <h2>Кнопки бывают 4-х цветов</h2>
+            <a class="btn-size_l btn-blue_flat" href="#">Blue Button</a>
+            <a class="btn-size_l btn-green_flat" href="#">Green Button</a>
+            <a class="btn-size_l btn-yellow_flat" href="#">Yellow Button</a>
+            <a class="btn-size_l btn-white_flat" href="#">White Button</a>
+            <br>
+            <!-- <p class="blocks-title">Default buttons L-size</p> -->
             <h2>Основная кнопка</h2>
             <p>Кнопка используется как триггер для выполнения определённого действия. Кнопка однозначно сообщает пользователю, что произойдёт после нажатия на&nbsp;неё. Синие кнопки — основные акцентные кнопки на странице.</p>
             <div class="btn-block">
-                <a class="btn-m btn_blue_gradient" href="#">Получить цену ниже</a>
-                <a class="btn-l btn_blue_gradient" href="#">Получить цену ниже</a>
-                <a class="btn-l btn_blue_flat" href="#">Получить цену ниже</a>
-                <a class="btn-l btn_blue_disable" href="#">Получить цену ниже</a>
+                <a class="btn-size_m btn-blue_gradient" href="#">Получить цену ниже</a>
+                <a class="btn-size_l btn-blue_gradient" href="#">Получить цену ниже</a>
+                <a class="btn-size_l btn-blue_flat" href="#">Получить цену ниже</a>
+                <a class="btn-size_l btn-blue_disable" href="#">Получить цену ниже</a>
             </div>
             <div>
                 <p class="label">Button Blue Gradient</p>
                 <div class="code-block">
 <pre class="" style="font-family:monospace;">
-.btn_blue_gradient {
+.btn-blue_gradient {
     display: inline-block;
     vertical-align: middle;
     margin: 10px 20px 10px 0;
@@ -88,15 +102,15 @@
             </div>
             <h2>Кнопка сохранения и акцептовки</h2>
             <p>Зеленые кнопки используются как подтверждение действий. Например – подтверждение каких либо изменений или акцептовка чего-либо.</p>
-            <a class="btn-l btn_green_gradient" href="#">Сохранить</a>
-            <a class="btn-l btn_green_flat" href="#">Сохранить</a>
-            <a class="btn-l btn_green_disable" href="#">Сохранить</a>
+            <a class="btn-size_l btn-green_gradient" href="#">Сохранить</a>
+            <a class="btn-size_l btn-green_flat" href="#">Сохранить</a>
+            <a class="btn-size_l btn-green_disable" href="#">Сохранить</a>
             <br>
             <div>
                 <p class="label">Button Green Gradient</p>
                 <div class="code-block">
 <pre class="" style="font-family:monospace;">
-.btn_green_gradient {
+.btn-green_gradient {
     display: inline-block;
     vertical-align: middle;
     margin: 10px 20px 10px 0;
@@ -117,12 +131,14 @@
 </pre>
                 </div>
             </div>
-            <p class="blocks-title">CTA buttons XL-size</p>
-            <h2>Главная кнопка</h2>
+            <!-- <p class="blocks-title">CTA buttons XL-size</p> -->
+            <h2>Главная кнопка (CTA)</h2>
             <p>Гланвая кнопка (СТА) используется для самых важных действий на сайте. Может быть только одна на странице.</p>
             <div class="btn-block__btn-xl">
-                <a class="btn-xl btn_yellow_cta" href="#">CTA Yellow Button</a>
-                <a class="btn-xl btn_green_cta" href="#">CTA Green Button</a>
+                <a class="btn-size_xl btn-yellow_cta" href="#">CTA Button</a>
+                <a class="btn-size_xl btn-yellow_disable" href="#">CTA Button</a>
+                <a class="btn-size_xl btn-green_cta" href="#">CTA Button</a>
+                <a class="btn-size_xl btn-green_disable" href="#">CTA Button</a>
                 <br>
                 <br>
             </div>
@@ -130,7 +146,7 @@
                 <p class="label">CTA Button Yellow</p>
                 <div class="code-block">
 <pre class="" style="font-family:monospace;">
-.btn_yellow_cta {
+.btn-yellow_cta {
     display: inline-block;
     vertical-align: top;
     margin: 20px 20px 20px 0;
@@ -153,20 +169,19 @@
 </pre>
                 </div>
             </div>
-            <p class="blocks-title">Nav buttons</p>
+
+            <!-- <p class="blocks-title">Nav buttons</p> -->
+
             <h2>Навигационные кнопки</h2>
             <p>Навигационные кнопки используются исключительно для навигации по сайту или странице. Переходы от раздела к разделу осуществляются кликом на эти кнопки. Всегда имеют иконки стрелочек вправо или влево. В зависимости от цвета фона, могут менять цвет своего фона на более темный. Если на странице кнопка перехода имеет особо важный статус, например переход к следующему шагу, она должне иметь контрастный акцентный цвет.</p>
-            <br>
-            <div>
-                <a class="btn-nav_light_back" href="#" rel="noopener">Вернуться назад</a>
-                <a class="btn-nav_light_forward" href="#" rel="noopener">Следующий шаг</a>
-                <a class="btn-nav_light_forward_accent" href="#" rel="noopener">Следующий шаг</a>
+            <div class="btn-block">
+                <a class="btn-nav btn-nav_white__back" href="#" rel="noopener">Вернуться назад</a>
+                <a class="btn-nav btn-nav_white__forward" href="#" rel="noopener">Следующий шаг</a>
+                <a class="btn-nav btn-nav_accent__forward" href="#" rel="noopener">Следующий шаг</a>
             </div>
-        </section>
 
-        <!-- Навигация по раздерам -->
+            <!-- Навигация по раздерам -->
 
-        <section class="page-nav">
             <div class="page-nav_back">
                 <a href="typography.html" rel="">← Предыдущий раздел</a>
             </div>
