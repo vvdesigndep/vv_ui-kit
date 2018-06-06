@@ -1054,6 +1054,41 @@ input[type="password"]:focus {
 
 /* Акцентная кнопка для навигации */
 
+.btn-nav_accent__back {
+    position: relative;
+    background-color: #5070B2;
+    color: #FFF;
+}
+
+.btn-nav_accent__back::before {
+    position: absolute;
+    content: "";
+    top: 13px;
+    left: 14px;
+    width: 8px;
+    height: 14px;
+    background: transparent url("../svg/shevron-left_white.svg") no-repeat;
+    background-position: 0 0;
+}
+
+.btn-nav_accent__back:hover {
+    background-color: #6186D0;
+}
+
+.btn-nav_accent__back:focus {
+    border-color: #4BACFF;
+    outline: none;
+}
+
+.btn-nav_accent__back:hover::before {
+    background: url("../svg/shevron-left_white.svg") no-repeat;
+}
+
+.btn-nav_accent__back:active {
+    background-color: #5070B2;
+    box-shadow: inset 0 1px 3px  rgba(0,0,0,0.3);
+}
+
 .btn-nav_accent__forward {
     position: relative;
     background-color: #5070B2;
