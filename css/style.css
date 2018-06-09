@@ -451,7 +451,7 @@ input[type="password"]:focus {
     margin-top: 20px;
     padding: 10px 40px;
     border: 1px solid #7290CB;
-    border-radius: 6px;
+    border-radius: 4px;
     background-color: #FFF;
     background-image: url("../svg/vv-logo-blue.svg");
     background-repeat: no-repeat;
@@ -630,6 +630,7 @@ input[type="password"]:focus {
     background-color: #5070B2;
     background: linear-gradient(to bottom, #5D82CB, #5070B2);
 }
+
 .btn-blue_gradient:hover {
     background-color: #7290cb;
     background: linear-gradient(to bottom, #668CD9, #5779BF);
